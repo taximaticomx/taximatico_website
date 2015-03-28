@@ -1,0 +1,20 @@
+{
+  "name": "taximatico.mx",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TheNaoX/taximatico_website",
+  "authors": [
+    "Antonio Chavez <cavjzz@gmail.com>"
+  ],
+  "description": "Taximatico website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap-sass": "~3.3.4"
+  }
+}

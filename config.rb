@@ -1,72 +1,44 @@
-###
-# Compass
-###
+require 'rake/file_list'
+require 'pathname'
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+bower_directory = 'bower_components'
 
-###
-# Page options, layouts, aliases and proxies
-###
+# Build search patterns
+patterns = [
+  '.png',  '.gif', '.jpg', '.jpeg', '.svg', # Images
+  '.eot',  '.otf', '.svc', '.woff', '.ttf', # Fonts
+  '.js',                                    # Javascript
+].map { |e| File.join(bower_directory, "**", "*#{e}" ) }
 
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+# Create file list and exclude unwanted files
+Rake::FileList.new(*patterns) do |l|
+  l.exclude(/src/)
+  l.exclude(/test/)
+  l.exclude(/demo/)
+  l.exclude { |f| !File.file? f }
+end.each do |f|
+  # Import relative paths
+  sprockets.import_asset(Pathname.new(f).relative_path_from(Pathname.new(bower_directory)))
+end
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+sprockets.append_path File.join root, bower_directory
 
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
+set :css_dir,    'stylesheets'
+set :js_dir,     'javascripts'
 set :images_dir, 'images'
+set :fonts_dir,  'fonts'
 
-# Build-specific configuration
+activate :deploy do |deploy|
+  deploy.method       = :git
+  deploy.remote       = 'origin'
+  deploy.branch       = 'gh-pages'
+  deploy.strategy     = :force_push
+  deploy.build_before = true
+end
+
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :relative_assets
 end
