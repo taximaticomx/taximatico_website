@@ -12,6 +12,13 @@
     <div class="col-md-7 header-right">
       <a href="#"><%= image_tag "logo.png" %></a>
       <p>Perfect app that makes your everyday life so much easier!</p>
+      <div class="notify-grid top">
+        <form>
+          <input type="text" class="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <br>
       <ul class="big-btns">
         <li><a class="btn-g" href="#">Download</a></li>
         <li><a class="btn-gr" href="#">learn more</a></li>
@@ -156,7 +163,7 @@
 </div>
 <div class="notify">
   <div class="container">
-    <div class="notify-grid">
+    <div class="notify-grid bottom">
       <%= image_tag "msg-icon.png" %>
       <h3>Get Notified of any updates!</h3>
       <p>Subscribe to our newsletter to be notified about new version release</p>
@@ -174,14 +181,5 @@
       <li><a class="facebook" href="#"><span> </span></a></li>
       <div class="clearfix"> </div>
     </ul>
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><p>Design by <a href="http://w3layouts.com/">W3layouts</a></p><span> </span></li>
-      <li><a href="#"> Terms of Use </a><span> </span></li>
-      <li><a href="#"> Support </a><span> </span></li>
-      <li><a href="#">  Help </a></li>
-    </ul>
-    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
   </div>
 </div>

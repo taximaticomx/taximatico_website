@@ -258,7 +258,12 @@ ul.usefull-for li a.u-windows span:hover{
   padding: 4em 0 5em;
 }
 .notify-grid{
-  text-align:center;
+  &.bottom{
+    text-align:center;
+  }
+  &.top{
+    text-align:left;
+  }
 }
 .notify-grid h3{
   color:#8C9494;
