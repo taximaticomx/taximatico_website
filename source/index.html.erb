@@ -6,18 +6,19 @@
           <div class="item">
             <%= image_tag "divice.png" %>
           </div>
-          <div class="item">
-            <%= image_tag "divice.png" %>
-          </div>
-          <div class="item">
-            <%= image_tag "divice.png" %>
-          </div>
         </div>
       </div>
     </div>
     <div class="col-md-7 header-right">
       <a href="#"><%= image_tag "logo.png" %></a>
       <p>Perfect app that makes your everyday life so much easier!</p>
+      <div class="notify-grid top">
+        <form>
+          <input type="text" class="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <br>
       <ul class="big-btns">
         <li><a class="btn-g" href="#">Download</a></li>
         <li><a class="btn-gr" href="#">learn more</a></li>
@@ -25,7 +26,6 @@
       <ul class="usefull-for">
         <li><a class="u-apple" href="#"><span> </span></a></li>
         <li><a class="u-and"href="#"><span> </span></a></li>
-        <li><a class="u-windows" href="#"><span> </span></a></li>
       </ul>
     </div>
     <div class="clearfix"> </div>
@@ -61,12 +61,6 @@
   <div class="container">
     <div class="col-md-6 fea-grids-left">
       <div id="owl-demo1" class="owl-carousel">
-        <div class="item">
-          <%= image_tag "divice-screen.png" %>
-        </div>
-        <div class="item">
-          <%= image_tag "divice-screen.png" %>
-        </div>
         <div class="item">
           <%= image_tag "divice-screen.png" %>
         </div>
@@ -164,94 +158,12 @@
           </div>
         </div>
       </div>
-      <div class="item">
-        <div class="testmonial-grids">
-          <div class="testmonial-head text-center">
-            <%= image_tag "quit.png" %>
-            <p>"Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit Nunc velit risus, dapibus non interdum.Nunc velit risus, dapibus non"</p>
-          </div>
-          <div class="testmonial-row">
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic1.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Wells Riley</h4>
-                <span>Designer</span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic2.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Anthony Lagoon</h4>
-                <span>photographer</span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic3.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Anna Yeaman</h4>
-                <span>Creative Director </span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="clearfix"> </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="testmonial-grids">
-          <div class="testmonial-head text-center">
-            <%= image_tag "quit.png" %>
-            <p>"Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit Nunc velit risus, dapibus non interdum.Nunc velit risus, dapibus non"</p>
-          </div>
-          <div class="testmonial-row">
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic1.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Wells Riley</h4>
-                <span>Designer</span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic2.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Anthony Lagoon</h4>
-                <span>photographer</span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-4 testmonial-grid">
-              <div class="t-people-left">
-                <%= image_tag "t-pic3.png" %>
-              </div>
-              <div class="t-people-right">
-                <h4>Anna Yeaman</h4>
-                <span>Creative Director </span>
-              </div>
-              <div class="clearfix"> </div>
-            </div>
-            <div class="clearfix"> </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 <div class="notify">
   <div class="container">
-    <div class="notify-grid">
+    <div class="notify-grid bottom">
       <%= image_tag "msg-icon.png" %>
       <h3>Get Notified of any updates!</h3>
       <p>Subscribe to our newsletter to be notified about new version release</p>
@@ -267,18 +179,7 @@
     <ul>
       <li><a class="twitter" href="#"><span> </span></a></li>
       <li><a class="facebook" href="#"><span> </span></a></li>
-      <li><a class="vemeo" href="#"><span> </span></a></li>
-      <li><a class="pin" href="#"><span> </span></a></li>
       <div class="clearfix"> </div>
     </ul>
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><p>Design by <a href="http://w3layouts.com/">W3layouts</a></p><span> </span></li>
-      <li><a href="#"> Terms of Use </a><span> </span></li>
-      <li><a href="#"> Support </a><span> </span></li>
-      <li><a href="#">  Help </a></li>
-    </ul>
-    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
   </div>
 </div>

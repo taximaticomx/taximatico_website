@@ -24,7 +24,7 @@
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #98D361;
+	color: #FABF01;
 	display: inline-block;
 	zoom: 1;
 	margin: 5px;
@@ -70,12 +70,12 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	border:2px solid #98D361;
+	border:2px solid #FABF01;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	background:#98D361;
+	background:#FABF01;
 	opacity: 1;
 }
 
