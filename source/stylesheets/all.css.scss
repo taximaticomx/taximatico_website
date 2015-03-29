@@ -4,6 +4,8 @@
 
 @import "bootstrap";
 
+$base-color: #FABF01;
+
 html, body{
   font-family: 'Lato', sans-serif;
   font-size: 100%;
@@ -52,8 +54,8 @@ ul.big-btns li a{
 }
 ul.big-btns li a.btn-g{
   background: #FFF;
-  border: 2px solid #98D361;
-  color: #98D361;
+  border: 2px solid $base-color;
+  color: $base-color;
   display: inline-block;
 }
 ul.big-btns li a.btn-g:hover{
@@ -68,8 +70,8 @@ ul.big-btns li a.btn-gr{
 }
 ul.big-btns li a.btn-gr:hover{
   background:#FFF;
-  border:2px solid #98D361;
-  color:#98D361;
+  border:2px solid $base-color;
+  color:$base-color;
 }
 ul.usefull-for{
   margin:4em 0 0 0;
@@ -106,7 +108,7 @@ ul.usefull-for li a.u-windows span:hover{
 }
 /*----- top-grids -----*/
 .top-grids{
-  background:#98D361;
+  background: $base-color;
   padding:3.2em 0 5em;
 }
 .top-grids-head h3{
@@ -180,7 +182,7 @@ ul.usefull-for li a.u-windows span:hover{
   background: image-url("fea-cions.png") no-repeat 0px 0px;
 }
 .fea-grids-left-grid-right h4{
-  color: #98D361;
+  color: #727272;
   font-weight: 400;
   font-size: 1.5em;
   margin-bottom: 0.2em;
@@ -233,7 +235,7 @@ ul.usefull-for li a.u-windows span:hover{
   text-align:left;
 }
 .t-people-right h4{
-  color: #98D361;
+  color: $base-color;
   font-weight: 400;
   font-size: 1.3em;
   margin-bottom: 0.2em;
@@ -299,7 +301,7 @@ ul.usefull-for li a.u-windows span:hover{
   position:relative;
 }
 .notify-grid input[type="text"]:hover{
-  border-color:#98D361;
+  border-color:$base-color;
 }
 .notify-grid input[type="submit"]{
   border-top-right-radius: 3em;
@@ -312,7 +314,7 @@ ul.usefull-for li a.u-windows span:hover{
   -o-border-bottom-right-radius: 3em;
   -ms-border-top-right-radius: 3em;
   -ms-border-bottom-right-radius: 3em;
-  background: #98D361;
+  background: $base-color;
   padding: 0.72em 2em;
   color: #FFF;
   text-transform: uppercase;
@@ -408,7 +410,7 @@ ul.usefull-for li a.u-windows span:hover{
   margin:0;
 }
 .footer-links ul li p a,.footer-links ul li a:hover{
-  color:#98D361;
+  color:$base-color;
 }
 #toTop {
   display: none;
