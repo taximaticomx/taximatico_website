@@ -11,22 +11,27 @@
     </div>-->
     <div class="col-md-12 header-right text-center">
       <a href="#"><%= image_tag "logo-cuadrado.svg" %></a>
-      <p>¿Eres Taxista?</p>
-      <div class="notify-grid top">
-        <form>
-          <input type="text" class="text" value="Escribe aquí tu correo eléctronico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+      <p>Pedir taxi nunca había sido tan sencillo. Proximamente...</p>
+      <div class="row notify-grid top">
+        <form class="col-sm-12">
+          <label for="email">Suscríbete para recibir noticias</label>
+          <input type="text" class="text" name="email" placeholder="Escribe aquí tu correo eléctronico" >
           <input type="submit" value="Enviar" />
         </form>
       </div>
       <br>
-      <ul class="big-btns">
-        <li><a class="btn-g" href="#">Download</a></li>
-        <li><a class="btn-gr" href="#">learn more</a></li>
-      </ul>
-      <ul class="usefull-for">
-        <li><a class="u-apple" href="#"><span> </span></a></li>
-        <li><a class="u-and"href="#"><span> </span></a></li>
-      </ul>
+      <div class="row">
+        <div class="col-sm-12">
+          <!--<ul class="big-btns">
+            <li><a class="btn-g" href="#">Download</a></li>
+            <li><a class="btn-gr" href="#">learn more</a></li>
+          </ul>-->
+          <ul class="usefull-for">
+            <li><a class="u-apple" href="#"><span> </span></a></li>
+            <li><a class="u-and"href="#"><span> </span></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="clearfix"> </div>
   </div>
