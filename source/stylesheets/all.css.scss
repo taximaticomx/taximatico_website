@@ -5,6 +5,7 @@
 @import "bootstrap";
 
 $base-color: #E46C25;
+$gris-identidad: #585857;
 
 html, body{
   font-family: 'Lato', sans-serif;
@@ -19,13 +20,27 @@ body a{
   -o-transition:0.5s all;
   -ms-transition:0.5s all;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $gris-identidad;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $gris-identidad;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $gris-identidad;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: $gris-identidad;
+}
 /*----- header ----*/
 .header {
   padding: 3em 0;
 }
 .header-right{
   p{
-    color: #B9B9B9;
+    color: $gris-identidad;
     font-size: 2em;
     font-weight: 300;
     margin: 2em 0 2em;
