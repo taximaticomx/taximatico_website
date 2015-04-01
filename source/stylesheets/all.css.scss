@@ -24,12 +24,11 @@ body a{
   padding: 3em 0;
 }
 .header-right{
-  margin-top: 8em;
   p{
     color: #B9B9B9;
     font-size: 1.6em;
     font-weight: 400;
-    margin: 4em 0 2em;
+    margin: 2em 0 2em;
   }
 }
 ul.big-btns{
@@ -126,7 +125,7 @@ ul.usefull-for{
     width: 80%;
     margin: 0 auto;
   }
-} 
+}
 .top-grid {
   span{
     width: 89px;
@@ -286,7 +285,7 @@ ul.usefull-for{
   form{
     margin-top:2em;
   }
-  input[type="text"]{
+  input[type="email"]{
     width: 70%;
     padding: 0.9em;
     border:2px solid #EEE;
@@ -457,9 +456,6 @@ ul.usefull-for{
 }
 /*----- responsive-design ------*/
 @media (max-width:1024px){
-  .header-right {
-    margin-top: 4em;
-  }
   .top-grid p {
     width: 100%;
   }
@@ -486,7 +482,6 @@ ul.usefull-for{
 }
 @media (max-width:768px){
   .header-right {
-    margin-top: 2em;
     text-align:center;
   }
   .top-grid p {
@@ -540,7 +535,6 @@ ul.usefull-for{
 }
 @media (max-width:640px){
   .header-right {
-    margin-top: 2em;
     text-align:center;
   }
   .top-grid p {
@@ -630,7 +624,6 @@ ul.usefull-for{
 }
 @media (max-width:480px){
   .header-right {
-    margin-top: 2em;
     text-align:center;
   }
   .top-grid p {
@@ -743,7 +736,6 @@ ul.usefull-for{
 }
 @media (max-width:320px){
   .header-right {
-    margin-top: 1em;
     text-align:center;
   }
   .top-grid p {
