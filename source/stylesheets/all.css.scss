@@ -43,7 +43,7 @@ body a{
     color: $gris-identidad;
     font-size: 2em;
     font-weight: 300;
-    margin: 2em 0 2em;
+    margin: 0.5em 0;
   }
 }
 ul.big-btns{
@@ -88,7 +88,8 @@ ul.big-btns{
   }
 }
 ul.usefull-for{
-  margin:4em 0 0 0;
+  margin:1em 0 0 0;
+  float: right;
   padding:0;
   li{
     list-style:none;
